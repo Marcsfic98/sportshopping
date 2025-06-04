@@ -1,9 +1,13 @@
+import { faBars, faSearch, faShoppingBag, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import './style.css';
 import { BrowserRouter as Router ,Routes ,Route } from "react-router-dom";
 function Navbar() {
   return (
     <div className="nav">
-     <h1 className="logo">SPORT<span>SHOPPING</span></h1>
+     <div className="inner-content">
+        <h1 className="logo">SPORT<span>SHOPPING</span></h1>
      <nav>
         <ul>
             <li><Link to="/">Home</Link></li>
@@ -14,8 +18,20 @@ function Navbar() {
         </ul>
      </nav>
 
-     <div className="search-input-container">
-        <input type="search"></input>
+     <div className="navs-icons-container">
+        <div className="search-input-container">
+            <input placeholder="Procurar" type="search"></input>
+            <button><FontAwesomeIcon icon={faSearch} /></button>
+         </div>
+         <button className="shopping-cart">
+            <FontAwesomeIcon icon={faShoppingCart}/>
+            <div className="products-count">0</div>
+         </button>
+
+         <button className="menu-buttom">
+            <FontAwesomeIcon icon={faBars}/>
+        </button>
+     </div>
      </div>
     </div>
   );
