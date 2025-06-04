@@ -102,3 +102,75 @@
 .menu-buttom{
     display: none;
 }
+
+
+
+@media screen and (max-width:920px) {
+    
+.logo{
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width:728px) {
+
+   .logo{
+    font-size: 18px;
+   }
+
+   nav{
+    display: none;
+   }
+
+   nav.show{
+    display: block;
+   }
+    
+    .nav ul{
+        position: absolute;
+        height: 12rem;
+        width: 100vw;
+        background-color: white;
+        display: block;
+        left: 0;
+        top: 87px;
+        text-align: center;
+       
+    }
+
+    .nav li{
+         margin: 1rem 0;
+    }
+
+    .search-input-container input{
+        width: 6rem;
+    }
+
+    .menu-buttom{
+    display: block;
+}
+}
+
+@media screen and (max-width:350px){
+     .search-input-container{
+        display: none;
+    }
+
+    .nav{
+   
+    padding:1rem 1rem ;
+   
+}
+
+.nav ul{
+        position: absolute;
+        height: 12rem;
+        width: 100vw;
+        background-color: white;
+        display: block;
+        left: 0;
+        top: 70px;
+        text-align: center;
+       
+    }
+}
