@@ -35,6 +35,7 @@
     color: var(--dark-color);
 }
 
+
 .nav ul{
     display: flex;
     list-style: none;

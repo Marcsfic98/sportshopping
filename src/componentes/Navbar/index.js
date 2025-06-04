@@ -10,6 +10,7 @@ function Navbar() {
     <div className="nav">
      <div className="inner-content">
         <h1 className="logo">SPORT<span>SHOPPING</span></h1>
+        
      <nav className={`${show && 'show'}`}>
         <ul>
             <li><Link to="/">Home</Link></li>
