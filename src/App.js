@@ -5,6 +5,7 @@ import Main from "./componentes/Main";
 import Cards from "./componentes/Cards";
 import Product from "./componentes/Product";
 import Depoiments from "./componentes/Depoiments";
+import BoxEmail from "./componentes/BoxEmail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Cards />
       <Product/>
       <Depoiments/>
+      <BoxEmail/>
     </div>
    </Router>
   );
