@@ -1,0 +1,155 @@
+
+
+.container-p{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.product-container{
+    border: 1px solid #ccc;
+    height: 40rem;
+    width: 23%; 
+    margin: 40px 1%;
+    cursor: pointer;
+    background-color: white;
+}
+
+.product-container:hover p{
+    color: black;
+    transition: 1s;
+}
+
+.product-container:hover .info-product .rate{
+    color: #f2e03a;
+}
+
+.img-product{
+    
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-product{
+    margin: 2% 2%;
+}
+
+.info-product p{
+    color: #958b8b;
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+
+.info-product .rate{
+    color: #f2e03a;
+    margin-left: 2px;
+}
+
+.info-product h2{
+    font-size: 18px;
+}
+
+.info-product h3{
+    font-size: 20px;
+}
+
+.info-product h2::before{
+    content: '';
+    display: inline-block;
+    background-image:url('../../../public/images/pix.svg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    height:20px;
+    width: 20px;
+    
+}
+
+.info-product b{
+    color: rgb(19, 175, 19);
+    font-size: 24px;
+    
+}
+
+.info-product button{
+    color:white ;
+    background-color: rgb(19, 175, 19);
+    padding: 6px 4px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.info-product button:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.fla{
+    background-image: url("../../../public/images/produtos/fla.jpg");
+}
+
+.alemanha{
+    background-image: url("../../../public/images/produtos/alemanha.jpg");
+}
+
+.arsenal{
+    background-image: url("../../../public/images/produtos/arsenal.jpg");
+}
+
+.brasil{
+    background-image: url("../../../public/images/produtos/brasil.jpg");
+}
+
+.brasil94{
+    background-image: url("../../../public/images/produtos/brasil94.jpg");
+}
+
+.flatreino{
+    background-image: url("../../../public/images/produtos/fla_treino.jpg");
+}
+
+.fla81{
+    background-image: url("../../../public/images/produtos/fla81.jpg");
+}
+
+.gremio{
+    background-image: url("../../../public/images/produtos/gremio.jpg");
+}
+
+.mancity{
+    background-image: url("../../../public/images/produtos/man-city.jpg");
+}
+
+.milan{
+    background-image: url("../../../public/images/produtos/milan.jpg");
+}
+
+.palmeiras{
+    background-image: url("../../../public/images/produtos/palmeiras.jpg");
+}
+
+.real{
+    background-image: url("../../../public/images/produtos/real_treino.jpg");
+}
+
+
+@media screen and (max-width:900px) {
+    .product-container{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product-container{
+        width: 80%;
+        margin-inline: auto;
+    }
+}

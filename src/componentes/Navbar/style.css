@@ -10,7 +10,8 @@
 
 
 .nav{
-    background-color: white;
+    background: #538de6;
+    
     padding:0.5rem 1rem ;
     position: sticky;
     top: 0;
@@ -34,7 +35,6 @@
 .logo span{
     color: var(--dark-color);
 }
-
 
 .nav ul{
     display: flex;
@@ -93,6 +93,9 @@
 .search-input-container input{
     border: none;
     outline: none;
+
+    background-color: #538de6;
+
 }
 
 .search-input-container svg{
@@ -170,7 +173,7 @@
         background-color: white;
         display: block;
         left: 0;
-        top: 70px;
+        top: px;
         text-align: center;
        
     }

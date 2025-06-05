@@ -18,6 +18,10 @@ body{
     color: var(--dark-color);
 }
 
+.app{
+
+}
+
 a{
     text-decoration: none;
     color: unset;

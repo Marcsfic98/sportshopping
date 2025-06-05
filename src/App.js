@@ -3,6 +3,8 @@ import { BrowserRouter as Router , Route ,Routes } from "react-router-dom";
 import './App.css';
 import Main from "./componentes/Main";
 import Cards from "./componentes/Cards";
+import Product from "./componentes/Product";
+import Depoiments from "./componentes/Depoiments";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar/>
       <Main/>
       <Cards />
+      <Product/>
+      <Depoiments/>
     </div>
    </Router>
   );

@@ -14,53 +14,48 @@
     max-width: 1100px;
     margin: 0 auto;
 }
-.cards{
+.cards_d{
     display: inline-block;
-    width: 23%;
-    height: 6rem;
+    width: 31%;
+    height: 12rem;
     background-color: hsl(0, 3%, 94%);
     border-radius: 18px;
     position: relative;
     margin-left: 1rem;
-   
+   cursor: pointer;
 }
 
-.cards h2{
+.cards_d h2{
     font-size: 16px;
 }
 
-.cards p{
+.cards_d p{
     font-size: 12px;
 }
 
-.box-icon{
+.cards_d .box-icon{
     color: #ccc;
-    height: 4rem;
-    width: 4rem;
-    background-color: #ccc;
+    height: 5rem;
+    width: 5rem;
+   
+    background-size: contain;
     border-radius: 50%;
-    display: inline-block;
-    margin: 1rem;
-    position: relative;
+    display: flex;
+    
+    margin: 20px auto;
 }
 
-.info{
-    display: inline-block;
+.cards_d .info{
+    display: block;
     height: 8rem;
     line-height: 20px;
-    position: absolute;
-   top: 28px;
+    position: static;
+    text-align: center;
 }
 
-i{
-    color: black;
-    position: absolute;
-    left: 20px;
-    top: 19px;
-    font-size: 24px;
-}
 
-.page{
+
+.cards_d .page{
     font-size: 28px;
     color: var(--primary-color);
     font-weight: bold;
@@ -70,11 +65,24 @@ i{
 }
 
 
-.line{
+.line_d{
     height: 2px;
-    width: 9rem;
+    width: 12rem;
     margin: 0 auto;
     background-color: var(--dank-primary-color);
+    margin-bottom: 5rem;
+}
+
+.marcos{
+     background-image: url('https://avatars.githubusercontent.com/u/131191211?v=4');
+}
+
+.jose{
+    background-image: url('https://avatars.githubusercontent.com/u/114033?v=4');
+}
+
+.neymar{
+     background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUREvlCvHREdbT-Xsf2L2dmgO7AulT-6hqeDRUThJvVKKQwYuPwNatanNGyJiXSwubdlC8iTQHCPxOrsM-uuUCfg');
 }
 @media screen and (max-width:960px) {
     .cards{
