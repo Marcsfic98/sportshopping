@@ -45,6 +45,9 @@ function Cards( props ) {
             <p>Satisfaçao ou Reembolso</p>
         </div>
     </div>
+
+    <div className='page'>Produtos</div>
+    <div className='line'></div>
     </div>
   );
 }
