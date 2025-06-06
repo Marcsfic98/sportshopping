@@ -10,7 +10,7 @@ function BoxEmail() {
         <h3>Quer oferta ?</h3>
         <p>Receba nossos Descontos! Cadastre-se agora.  </p>
         <input placeholder='Deixe seu Email...' type='email'></input>
-        <button>Enviar</button>
+        <button  >Enviar</button>
       </div>
     </div>
 

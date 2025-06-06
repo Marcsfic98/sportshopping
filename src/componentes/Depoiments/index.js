@@ -35,7 +35,7 @@ function Depoiments( ) {
         </div>
         <div className="info">
             <h2>Neymar jr</h2>
-            <p>Melhor loja com melhores preços ! </p>
+            <p>Melhor loja , com os melhores preços ! </p>
         </div>
     </div>
 
