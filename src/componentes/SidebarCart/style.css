@@ -13,7 +13,7 @@
     height: 100%;
     overflow-y: auto;
     scrollbar-width: none;
-
+    display: none;
 }
 
 
@@ -30,4 +30,56 @@
 .top button{
     background-color: black ;
     color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-container{
+    margin-block:1rem ;
+}
+
+.left-side{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.left-side .details{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side .details p{
+    font-size: 0.8rem;
+}
+
+.left-side .details input{
+    width: 55px;
+    margin-top: 0.25rem;
+     margin-bottom: 0.25rem;
+    padding: 0.2rem;
+}
+
+.sidebar-cart .btn-icon{
+    background-color: #ff8800;
+    display: flex;
+    margin: 0 auto;
+    color: white;
+    padding: 4px 6px;
+    height: 35px;
+    border-radius: 12px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-cart .btn-icon svg{
+    margin-left: 10px;
+}
+
+.sidebar-cart .show{
+    display: block;
 }
