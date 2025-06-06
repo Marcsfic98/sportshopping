@@ -1,0 +1,25 @@
+
+
+.container-p{
+    
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media screen and (max-width:900px) {
+    .product-container{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product-container{
+        width: 80%;
+        margin-inline: auto;
+    }
+}

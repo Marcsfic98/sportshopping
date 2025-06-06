@@ -1,0 +1,134 @@
+{
+
+"product": [
+
+    {
+        "id":1,
+        "image":"/image_product/camisa-flamengo-especial.webp",
+        "name":"Camisa Flamengo Especial",
+        "price":175.90
+    },
+    {
+        "id":2,
+        "image":"/image_product/camisa-flamengo-treino.webp",
+        "name":"Camisa Flamengo Treino",
+        "price":151.90
+    },
+    {
+        "id":3,
+        "image":"/image_product/camisa-flamengo-home.webp",
+        "name":"Camisa Flamengo Home",
+        "price":161.91
+    },
+    {
+        "id":4,
+        "image":"/image_product/camisa-botafogo-home.webp",
+        "name":"Camisa Botafogo Home",
+        "price":193.11
+    },
+    {
+        "id":5,
+        "image":"/image_product/camisa-sao-paulo.webp",
+        "name":"Camisa Sao Paulo Treino",
+        "price":169.91
+    },
+    {
+        "id":6,
+        "image":"/image_product/camisa-palmeiras-especial.webp",
+        "name":"Camisa Palmeiras especial",
+        "price":173.91
+    },
+    {
+        "id":7,
+        "image":"/image_product/camisa-cruzeiro-home.webp",
+        "name":"Camisa Cruzeiro Home",
+        "price":191.91
+    },
+    {
+        "id":8,
+        "image":"/image_product/camisa-gremio-home.webp",
+        "name":"Camisa Gremio Home",
+        "price":181.91
+    },
+    {
+        "id":9,
+        "image":"/image_product/camisa-fluminense.webp",
+        "name":"Camisa Fluminense Treino",
+        "price":169.91
+    },
+    {
+        "id":10,
+        "image":"/image_product/camisa-atletico-mineiro.webp",
+        "name":"Camisa Atletico Mineiro Treino",
+        "price":124.91
+    }
+    ,
+    {
+        "id":11,
+        "image":"/image_product/camisa-internacional-home.webp",
+        "name":"Camisa Internacional Home",
+        "price":161.91
+    }
+    ,
+    {
+        "id":12,
+        "image":"/image_product/camisa-fluminense-home.webp",
+        "name":"Camisa Fluminense Home",
+        "price":175.91
+    }
+    ,
+    {
+        "id":13,
+        "image":"/image_product/camisa-palmeiras-away.webp",
+        "name":"Camisa Palmeiras Treino",
+        "price":191.91
+    }
+    ,
+    {
+        "id":14,
+        "image":"/image_product/camisa-gremio-third.webp",
+        "name":"Camisa Gremio Treino",
+        "price":192.91
+    }
+    ,
+    {
+        "id":15,
+        "image":"/image_product/camisa-botafogo-away.webp",
+        "name":"Camisa Botafogo Treino",
+        "price":131.91
+    }
+    ,
+    {
+        "id":16,
+        "image":"/image_product/camisa-fluminense-goleiro.webp",
+        "name":"Camisa Fluminense Goleiro",
+        "price":174.91
+    },
+    {
+        "id":17,
+        "image":"/image_product/camisa-rb-bragantino.webp",
+        "name":"Camisa RB Bragantino Home",
+        "price":161.91
+    }
+    ,
+    {
+        "id":18,
+        "image":"/image_product/camisa-atletico-mg.webp",
+        "name":"Camisa Atletico Mineiro Home",
+        "price":155.91
+    },
+    {
+        "id":19,
+        "image":"/image_product/camisa-internacional-third.webp",
+        "name":"Camisa Internacional Treino",
+        "price":161.91
+    },
+    {
+        "id":20,
+        "image":"/image_product/camisa-botafogo-fourth.webp",
+        "name":"Camisa Botafogo Aura90",
+        "price":161.91
+    }
+    
+]
+}

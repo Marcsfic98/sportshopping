@@ -1,24 +1,25 @@
-import Navbar from "../componentes/Navbar";
+
 import Main from "../componentes/Main";
 import Cards from "../componentes/Cards";
-import Product from "../componentes/Product";
 import Depoiments from "../componentes/Depoiments";
 import BoxEmail from "../componentes/BoxEmail";
-import Footer from "../componentes/Footer";
 import SidebarCart from "../componentes/SidebarCart";
+import ProductList from "../componentes/ProductList";
 
-function Home() {
+function Home({products}) {
+
+
   return (
   
      <div className="home">
-      <Navbar/>
+      
       <Main/>
       <SidebarCart/>
       <Cards />
-      <Product/>
+      <ProductList products={products}/>
       <Depoiments/>
       <BoxEmail/>
-      <Footer/>
+     
     </div>
    
   );

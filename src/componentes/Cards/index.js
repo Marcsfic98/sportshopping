@@ -3,7 +3,7 @@ import './style.css';
 import { faCar, faCircleCheck, faCreditCard, faLock } from '@fortawesome/free-solid-svg-icons';
 
 function Cards( props ) {
-    console.log(props.icon)
+    
   return (
     <div className='container'>
         <div className="cards">

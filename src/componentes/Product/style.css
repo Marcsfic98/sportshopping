@@ -1,12 +1,5 @@
 
 
-.container-p{
-    max-width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
 .product-container{
     border: 1px solid #ccc;
     height: 30rem;
@@ -29,9 +22,12 @@
     
     height: 60%;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 120% 100%;
+ 
+}
+
+.product-container img{
+    width: 100%;
+    height: 100%;
 }
 
 .info-product{
@@ -94,53 +90,7 @@
     transition: 1s;
 }
 
-.fla{
-    background-image: url("../../../public/images/produtos/fla.jpg");
-}
 
-.alemanha{
-    background-image: url("../../../public/images/produtos/alemanha.jpg");
-}
-
-.arsenal{
-    background-image: url("../../../public/images/produtos/arsenal.jpg");
-}
-
-.brasil{
-    background-image: url("../../../public/images/produtos/brasil.jpg");
-}
-
-.brasil94{
-    background-image: url("../../../public/images/produtos/brasil94.jpg");
-}
-
-.flatreino{
-    background-image: url("../../../public/images/produtos/fla_treino.jpg");
-}
-
-.fla81{
-    background-image: url("../../../public/images/produtos/fla81.jpg");
-}
-
-.gremio{
-    background-image: url("../../../public/images/produtos/gremio.jpg");
-}
-
-.mancity{
-    background-image: url("../../../public/images/produtos/man-city.jpg");
-}
-
-.milan{
-    background-image: url("../../../public/images/produtos/milan.jpg");
-}
-
-.palmeiras{
-    background-image: url("../../../public/images/produtos/palmeiras.jpg");
-}
-
-.real{
-    background-image: url("../../../public/images/produtos/real_treino.jpg");
-}
 
 
 @media screen and (max-width:900px) {
