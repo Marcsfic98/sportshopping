@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Product ({id,image,name,price,addProductCart}) {
+function Product ({id,image,name,price,addProductCart ,productNameList,product}) {
 
     const sun = Number(price) + 20 ;
     const division =Number(sun) / 12; 
@@ -8,7 +8,10 @@ function Product ({id,image,name,price,addProductCart}) {
     const sunFormat = sun.toFixed(2).replace(".", ",");
     const priceFormat = price.toFixed(2).replace(".", ",")
 
+    
+
     return(
+        
         
               <div className="product-container">
                 <div className="img-product fla">
@@ -20,7 +23,7 @@ function Product ({id,image,name,price,addProductCart}) {
                     <h2><b>R${priceFormat}</b> no pix</h2>
                     <h3>R${sunFormat}</h3>
                     <p>12x de R${divisionFormat}</p>
-                    <button onClick={() => addProductCart()}>Comprar</button>
+                    <button onClick={() => addProductCart(id)}>Comprar</button>
                 </div>
             </div>
 

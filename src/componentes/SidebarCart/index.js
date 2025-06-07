@@ -1,4 +1,4 @@
-import { faMoneyBill, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faFaceSadTear, faMoneyBill, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SidebarProduct from "../SidebarProduct";
 import { Link } from "react-router-dom";
@@ -6,8 +6,9 @@ import "./style.css";
 
 
 
-function SidebarCart({SetshowSidebarCart,showSidebarCart,selectedProduct}) {
-
+function SidebarCart({SetshowSidebarCart,showSidebarCart,selectedProduct,cartTotal,removeProductCart,addToCartTotal}) {
+  
+  const cartTotalFormat = cartTotal.toFixed(2).replace(".", ",")
   return (
         <aside className={`sidebar-cart ${showSidebarCart && "show"}`}>
           <div className="top">
@@ -18,20 +19,32 @@ function SidebarCart({SetshowSidebarCart,showSidebarCart,selectedProduct}) {
           </div>
 
           <div className="sidebar-products-list">
-            {selectedProduct.map(product => <SidebarProduct key={product.id} {...product}/>)}
+            {selectedProduct.map(product => <SidebarProduct key={product.id} cartTotal={cartTotal} {...product} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} />)}
               
           </div>
 
-          <div className="total-container">
-            <b>Total : </b> R$250
-          </div>
+          {
+            cartTotal >= 1 ? (
 
-          <Link to='/cart/checkout' className="btn-icon">
-            <span>Pagar agora</span>
-            <FontAwesomeIcon icon={faMoneyBill}/>
-          </Link>
+               <>
+              <div className="total-container">
+                  <b>Total : </b>R$ {cartTotalFormat}
+              </div>
 
-          <p>Seu carrinho está vazio</p>
+              <Link to='/cart/checkout' className="btn-icon">
+                <span>Pagar agora</span>
+                <FontAwesomeIcon icon={faMoneyBill}/>
+              </Link>
+
+              </>
+              
+            ):(
+              <p className="p_center">Seu carrinho está vazio <FontAwesomeIcon icon={faFaceSadTear} /> </p>
+            )
+          }
+
+          
+          
 
         </aside>
   

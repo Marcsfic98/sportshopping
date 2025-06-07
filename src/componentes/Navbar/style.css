@@ -148,8 +148,9 @@
         background-color: white;
         display: block;
         left: 0;
-        top: 87px;
+        top: 83px;
         text-align: center;
+        box-shadow: 5px 5px 20px ;
        
     }
 
@@ -184,7 +185,7 @@
         background-color: white;
         display: block;
         left: 0;
-        top: px;
+        top: 58px;
         text-align: center;
        
     }

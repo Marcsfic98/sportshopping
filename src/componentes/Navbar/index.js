@@ -2,11 +2,13 @@ import { faBars, faSearch, faShoppingBag, faShoppingCart } from "@fortawesome/fr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import './style.css';
-import { useState } from "react";
-function Navbar({ SetshowSidebarCart , selectedProduct}) {
+import { useState , useEffect} from "react";
+function Navbar({ SetshowSidebarCart , selectedProduct , setFind}) {
 
    
    const [show , setShow] = useState(false);
+
+   
   return (
     <div className="nav">
      <div className="inner-content">
@@ -24,7 +26,8 @@ function Navbar({ SetshowSidebarCart , selectedProduct}) {
 
      <div className="navs-icons-container">
         <div className="search-input-container">
-            <input placeholder="Procurar" type="search"></input>
+         
+            <input onChange={(e)=>setFind(e.target.value)}  placeholder="Procurar" type="search"></input>
             <button><FontAwesomeIcon icon={faSearch} /></button>
          </div>
          <button onClick={() => SetshowSidebarCart(true)} className="shopping-cart">

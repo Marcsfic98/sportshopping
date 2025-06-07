@@ -83,3 +83,10 @@
  .sidebar-cart.show{
     display: block;
 }
+
+
+.p_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
