@@ -20,7 +20,7 @@ function Product ({id,image,name,price,addProductCart}) {
                     <h2><b>R${priceFormat}</b> no pix</h2>
                     <h3>R${sunFormat}</h3>
                     <p>12x de R${divisionFormat}</p>
-                    <button onClick={() => addProductCart(id)}>Comprar</button>
+                    <button onClick={() => addProductCart()}>Comprar</button>
                 </div>
             </div>
 
