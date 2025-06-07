@@ -22,6 +22,7 @@
     width: 15rem;
     height: 1.5rem;
     padding-left: 10px;
+    margin-left: 20px;
 }
 
 .box-form.justify{
@@ -106,4 +107,13 @@
     color: white;
     background-color: #ff8800;
     transition: 1s;
+}
+
+.box-cartao{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid #ff8800;
+    width: 100%;
 }

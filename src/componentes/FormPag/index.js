@@ -10,10 +10,10 @@ function FormPag() {
         <div className="form-conteiner">
           <div className='box-form'>
             <h2><FontAwesomeIcon icon={faLocationPin}/> Endereço de entrega</h2>
-            <input className='block' placeholder='Estado' type='text'></input>
-            <input className='block' placeholder='Cidade' type='text'></input>
-            <input className='block' placeholder='Rua' type='text'></input>
-            <input className='block' placeholder='numero' type='text'></input>
+            <input placeholder='Estado' type='text'></input>
+            <input  placeholder='Cidade' type='text'></input>
+            <input  placeholder='Rua' type='text'></input>
+            <input  placeholder='numero' type='text'></input>
           </div>
 
           <div className='box-form justify'>
@@ -47,7 +47,27 @@ function FormPag() {
                     
                     <button>Copiar QRcode</button>
                </div>
+
+               
              </div>
+
+                  <div className='box-cartao'>
+               <div className='qrcode'>
+               
+               </div>
+               <div className='total-price'>
+                    <p>Total dos produtos<b>R$151</b> </p>
+                    <p>Total do Frete    <b>R$0,00</b> </p>
+                    <p>Pagamento Total<b>R$151</b> </p>
+                    <br/>
+                    <br/>
+                    
+                    <button>Copiar QRcode</button>
+               </div>
+
+               
+             </div>
+
           </div>
         </div>
   );
