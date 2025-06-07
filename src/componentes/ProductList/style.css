@@ -13,7 +13,8 @@
 
 @media screen and (max-width:900px) {
     .product-container{
-        width: 48%;
+        width: 42%;
+        margin-inline: 4%;
     }
 }
 

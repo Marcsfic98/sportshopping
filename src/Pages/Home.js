@@ -6,7 +6,7 @@ import BoxEmail from "../componentes/BoxEmail";
 import SidebarCart from "../componentes/SidebarCart";
 import ProductList from "../componentes/ProductList";
 
-function Home({products}) {
+function Home({products, SetshowSidebarCart,showSidebarCart,addProductCart,selectedProduct}) {
 
 
   return (
@@ -14,9 +14,9 @@ function Home({products}) {
      <div className="home">
       
       <Main/>
-      <SidebarCart/>
+      <SidebarCart selectedProduct={selectedProduct} SetshowSidebarCart={ SetshowSidebarCart}  showSidebarCart={ showSidebarCart}/>
       <Cards />
-      <ProductList products={products}/>
+      <ProductList products={products} addProductCart={addProductCart}/>
       <Depoiments/>
       <BoxEmail/>
      

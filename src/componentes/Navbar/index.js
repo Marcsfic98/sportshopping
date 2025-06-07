@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import './style.css';
 import { useState } from "react";
-function Navbar() {
+function Navbar({ SetshowSidebarCart , selectedProduct}) {
 
+   
    const [show , setShow] = useState(false);
   return (
     <div className="nav">
@@ -26,9 +27,9 @@ function Navbar() {
             <input placeholder="Procurar" type="search"></input>
             <button><FontAwesomeIcon icon={faSearch} /></button>
          </div>
-         <button className="shopping-cart">
+         <button onClick={() => SetshowSidebarCart(true)} className="shopping-cart">
             <FontAwesomeIcon icon={faShoppingCart}/>
-            <div className="products-count">0</div>
+            <div className={`products-count ${selectedProduct.length === 0 && "none"}`} ><p>{selectedProduct.length}</p></div>
          </button>
 
          <button onClick={()=> setShow(!show)} className="menu-buttom">

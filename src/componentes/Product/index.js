@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Product ({id,image,name,price}) {
+function Product ({id,image,name,price,addProductCart}) {
 
     const sun = Number(price) + 20 ;
     const division =Number(sun) / 12; 
@@ -20,7 +20,7 @@ function Product ({id,image,name,price}) {
                     <h2><b>R${priceFormat}</b> no pix</h2>
                     <h3>R${sunFormat}</h3>
                     <p>12x de R${divisionFormat}</p>
-                    <button>Comprar</button>
+                    <button onClick={() => addProductCart(id)}>Comprar</button>
                 </div>
             </div>
 

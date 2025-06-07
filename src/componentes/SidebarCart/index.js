@@ -5,20 +5,20 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 
-function SidebarCart() {
+
+function SidebarCart({SetshowSidebarCart,showSidebarCart,selectedProduct}) {
+
   return (
-        <aside className="sidebar-cart">
+        <aside className={`sidebar-cart ${showSidebarCart && "show"}`}>
           <div className="top">
             <h3>Seu Carrinho</h3>
-            <button>
+            <button onClick={()=> SetshowSidebarCart(false)}>
               <FontAwesomeIcon icon={faXmark}/>
             </button>
           </div>
 
           <div className="sidebar-products-list">
-              <SidebarProduct/>
-              <SidebarProduct/>
-              <SidebarProduct/>
+            {selectedProduct.map(product => <SidebarProduct key={product.id} {...product}/>)}
               
           </div>
 

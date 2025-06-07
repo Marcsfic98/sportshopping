@@ -37,11 +37,9 @@
     color: #ccc;
     height: 5rem;
     width: 5rem;
-   
     background-size: contain;
     border-radius: 50%;
-    display: flex;
-    
+    display: block;
     margin: 20px auto;
 }
 
@@ -86,13 +84,22 @@
 }
 @media screen and (max-width:960px) {
     .cards_d{
-        width: 46%;
+        
+        width: 80%;
+        display: block;
+        margin: 1rem auto;
+        
+    }
+
+    .cards_d .box-icon{
+        position: relative;
+        top: 12px;
     }
 }
 
 @media screen and (max-width:560px) {
     .cards_d{
-        width: 60%;
+        width: 50%;
         display: block;
         margin: 1rem auto;
     }

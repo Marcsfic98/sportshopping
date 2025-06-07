@@ -75,11 +75,21 @@
     border-radius: 50%;
     color: white;
     padding: 0.7rem;
-    display: flex;
     font-size: 0.8rem;
+    text-align: center;
+    line-height: 1px;
+}
+
+.navs-icons-container .shopping-cart .products-count p{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.navs-icons-container .shopping-cart .products-count.none{
+    display: none;
+}
+
 
 .search-input-container{
     display: flex;
@@ -106,6 +116,7 @@
 .menu-buttom{
     display: none;
 }
+
 
 
 

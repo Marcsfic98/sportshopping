@@ -1,8 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
-function SidebarProduct() {
+function SidebarProduct({name, price , image}) {
+
+  const priceFormat = price.toFixed(2).replace(".", ",")
+
+  const [quantity, setQuantity] = useState(1);
+  const [priceSun , setPriceSun] = useState(price)
+
+   const priceSunFormat = priceSun.toFixed(2).replace(".", ",")
+
+  console.log(priceSun)
+
   return (
     <div className="sidebar-product">
         <div className="left-side">
@@ -11,17 +22,20 @@ function SidebarProduct() {
              </button>
 
              <div className="details">
-                <h4>Camisa Brasil</h4>
-                <p>R$195</p>
-                <input type="number"  min={1} max={100}/>
-                <p className="price-sum">
-                    <b>Soma: </b> R$3500
+                <h4>{name}</h4>
+                <p>R${priceFormat}</p>
+                <input type="number" value={quantity}  onChange={(e)=> {setQuantity(e.target.value); setPriceSun(e.target.value * price)}} min={1} max={100}/>
+                {priceSun > price && (
+                   <p className="price-sum">
+                    <b>Soma: </b> R${priceSunFormat}
                 </p>
+                )}
+               
              </div>
         </div>
 
         <div className="right-side">
-            <img src="/images/produtos/brasil.jpg" alt="camisa de time"/>
+            <img src={image} alt={name}/>
         </div>
     </div>
   );
