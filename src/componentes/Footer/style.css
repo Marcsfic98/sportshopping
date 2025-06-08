@@ -11,7 +11,7 @@
    justify-content: center;
 }
 
-.footer .card{
+.footer.card{
     display: flex;
     align-items: center;
 }
@@ -57,7 +57,16 @@
    justify-content: center;
 }
 
+.footer{
+    height: 17rem;
+}
 
 
+}
+
+@media screen and (max-width:460px){
+    .footer{
+    height: 20rem;
+}
 
 }

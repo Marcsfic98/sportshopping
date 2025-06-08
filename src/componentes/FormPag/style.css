@@ -8,8 +8,11 @@
 
 .box-form {
     border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin: 0 1% 20px 1%;
+    max-width: 97%;
+   padding: 20px 2%;
+    
+    
 }
 
 .box-form h2 {
@@ -70,7 +73,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #ff8800;
-    width: 100%;
+    width: 97%;
 }
 
 .qrcode {
@@ -246,4 +249,46 @@
     display: flex;
     margin: 20px auto;
     height: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .box-card{
+        flex-direction: column;
+        height: 46rem;
+    }
+
+    .container-card {
+        position: static;
+    }
+
+    .box-pix{
+        flex-direction: column;
+    }
+
+    .total-price{
+        margin-top: 13rem;
+    }
+
+    .flip-card-inner .card, .card-cvc {
+        width: 90%;
+        margin-inline: 5%;
+        
+    }
+
+     .box-card{
+        width: 45rem;
+    }
+
+    
+    
+}
+
+
+@media screen and (max-width:500px){
+     
+
+    .container-card{
+        width: 100%;
+    }
+    
 }

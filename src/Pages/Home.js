@@ -12,7 +12,7 @@ function Home({products, addProductCart,productNameList}) {
      <div className="home">
       
       <Main/>
-      <Cards />
+      <Cards text="Produtos " />
       <ProductList productNameList={productNameList} products={products} {...products} addProductCart={addProductCart}/>
       <Depoiments/>
       <BoxEmail/>

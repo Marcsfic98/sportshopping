@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 import { faCar, faCircleCheck, faCreditCard, faLock } from '@fortawesome/free-solid-svg-icons';
 
-function Cards( props ) {
+function Cards({ text }) {
     
   return (
     <div className='container'>
@@ -46,7 +46,7 @@ function Cards( props ) {
         </div>
     </div>
 
-    <div className='page'>Produtos</div>
+    <div className='page'>{text}</div>
     <div className='line'></div>
     </div>
   );

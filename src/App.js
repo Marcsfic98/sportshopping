@@ -7,6 +7,9 @@ import Footer from "./componentes/Footer";
 import { useEffect, useState } from "react";
 import SidebarCart from "./componentes/SidebarCart";
 import Check from "./Pages/Check";
+import Sobre from "./Pages/Sobre";
+
+
 
 
 
@@ -52,16 +55,20 @@ function App() {
 
   return (
    <Router>
-      <Navbar setFind={setFind}  selectedProduct={selectedProduct}  SetshowSidebarCart={ SetshowSidebarCart}/>
+    <div className="App">
+         <Navbar setFind={setFind}  selectedProduct={selectedProduct}  SetshowSidebarCart={ SetshowSidebarCart}/>
       <SidebarCart addToCartTotal={addToCartTotal} removeProductCart={removeProductCart} cartTotal={cartTotal} selectedProduct={selectedProduct} SetshowSidebarCart={ SetshowSidebarCart}  showSidebarCart={ showSidebarCart}/>
       <main>
         <Routes>
           <Route path="/" element={<Home productNameList={productNameList} addToCartTotal={addToCartTotal} removeProductCart={removeProductCart} cartTotal={cartTotal} products={products} selectedProduct={selectedProduct}  SetshowSidebarCart={ SetshowSidebarCart}  showSidebarCart={ showSidebarCart} addProductCart={addProductCart}/>}/>
           <Route path="/cart/checkout"  element={<Check selectedProduct={selectedProduct}  cartTotal={cartTotal} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} />}/>
+          <Route path="/sobre" element={<Sobre/>}/>
         </Routes>
 
       </main>
       <Footer/>
+    </div>
+     
    </Router>
   );
 }
