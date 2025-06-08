@@ -3,7 +3,7 @@ import "./style.css";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-function SidebarProduct({name,id, price , image ,removeProductCart,addToCartTotal,cartTotal}) {
+function SidebarProduct({name,id, price , image ,removeProductCart,addToCartTotal}) {
 
   const priceFormat = price.toFixed(2).replace(".", ",")
 

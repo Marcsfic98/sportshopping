@@ -2,12 +2,12 @@ import FormPag from "../componentes/FormPag";
 
 
 
-function Check (SetshowSidebarCart,showSidebarCart,selectedProduct,cartTotal,removeProductCart,addToCartTotal) {
+function Check ({cartTotal,removeProductCart,addToCartTotal,selectedProduct}) {
 
   return (
   
      <div >
-       <FormPag/>
+       <FormPag    cartTotal={cartTotal} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} selectedProduct={selectedProduct}/>
     </div>
    
   );

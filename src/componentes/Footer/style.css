@@ -11,12 +11,12 @@
    justify-content: center;
 }
 
-.card{
+.footer .card{
     display: flex;
     align-items: center;
 }
 
-.card p{
+.footer .card p{
     display: flex;
      margin-right: 10px;
      align-items: center;
@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.selo{
+.footer .selo{
     display: flex;
     justify-content: center;
     align-items: center;

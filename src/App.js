@@ -57,7 +57,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home productNameList={productNameList} addToCartTotal={addToCartTotal} removeProductCart={removeProductCart} cartTotal={cartTotal} products={products} selectedProduct={selectedProduct}  SetshowSidebarCart={ SetshowSidebarCart}  showSidebarCart={ showSidebarCart} addProductCart={addProductCart}/>}/>
-          <Route path="/cart/checkout"  element={<Check SetshowSidebarCart={SetshowSidebarCart} showSidebarCart={showSidebarCart} selectedProduct={selectedProduct} cartTotal={cartTotal} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} />}/>
+          <Route path="/cart/checkout"  element={<Check selectedProduct={selectedProduct}  cartTotal={cartTotal} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} />}/>
         </Routes>
 
       </main>
