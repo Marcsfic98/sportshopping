@@ -11,8 +11,7 @@
     margin: 0 1% 20px 1%;
     max-width: 97%;
    padding: 20px 2%;
-    
-    
+      
 }
 
 .box-form h2 {
@@ -289,6 +288,10 @@
 
     .container-card{
         width: 100%;
+    }
+
+    .container-card p{
+        font-size: 12px;
     }
     
 }

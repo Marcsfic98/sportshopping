@@ -1,4 +1,5 @@
 import Cards from "../componentes/Cards";
+import Infos from "../componentes/Infos";
 
 function Sobre() {
 
@@ -6,6 +7,7 @@ function Sobre() {
   
      <div >
       <Cards text="Sobre" />
+      <Infos/>
     </div>
    
   );

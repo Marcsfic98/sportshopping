@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(55, 52, 52);
-    height: 16rem;
     color: white;
     font-size: 20px;
     padding: 2% 2%;
-   align-items: center;
+    align-items: center;
    justify-content: center;
+   margin: 0 auto;
 }
 
 .footer.card{
@@ -17,9 +17,10 @@
 }
 
 .footer .card p{
-    display: flex;
+        display: flex;
      margin-right: 10px;
      align-items: center;
+     justify-content: center;
 }
 
 .footer svg{
@@ -42,31 +43,4 @@
 
 .footer span{
     font-size: 12px;
-}
-
-@media screen and (max-width:760px) {
-    .card {
-        display: block;
-       
-}
-
-.card p{
-    width: 100%;
-    text-align: center;
-   align-items: center;
-   justify-content: center;
-}
-
-.footer{
-    height: 17rem;
-}
-
-
-}
-
-@media screen and (max-width:460px){
-    .footer{
-    height: 20rem;
-}
-
 }

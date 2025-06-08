@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import SidebarCart from "./componentes/SidebarCart";
 import Check from "./Pages/Check";
 import Sobre from "./Pages/Sobre";
+import Contact from "./Pages/Contact";
 
 
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/" element={<Home productNameList={productNameList} addToCartTotal={addToCartTotal} removeProductCart={removeProductCart} cartTotal={cartTotal} products={products} selectedProduct={selectedProduct}  SetshowSidebarCart={ SetshowSidebarCart}  showSidebarCart={ showSidebarCart} addProductCart={addProductCart}/>}/>
           <Route path="/cart/checkout"  element={<Check selectedProduct={selectedProduct}  cartTotal={cartTotal} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} />}/>
           <Route path="/sobre" element={<Sobre/>}/>
+          <Route path="/contato" element={<Contact/>}/>
         </Routes>
 
       </main>
