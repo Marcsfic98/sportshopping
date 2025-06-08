@@ -1,0 +1,39 @@
+
+
+.container-login{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    padding: 8rem 0;
+}
+
+.box-login{
+    border: 3px solid #ff8800;
+    padding: 30px 4%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.box-login input{
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ff8800;
+    border-radius: 4px;
+}
+
+.box-login a{
+      border: 1px solid #e08823;
+      background-color:#ff8800 ;
+      border-radius: 4px;
+      padding: 10px 0;
+      color: white;
+      width: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+}

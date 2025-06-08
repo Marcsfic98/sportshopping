@@ -9,6 +9,7 @@ import SidebarCart from "./componentes/SidebarCart";
 import Check from "./Pages/Check";
 import Sobre from "./Pages/Sobre";
 import Contact from "./Pages/Contact";
+import Account from "./Pages/Account";
 
 
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/cart/checkout"  element={<Check selectedProduct={selectedProduct}  cartTotal={cartTotal} removeProductCart={removeProductCart} addToCartTotal={addToCartTotal} />}/>
           <Route path="/sobre" element={<Sobre/>}/>
           <Route path="/contato" element={<Contact/>}/>
+          <Route path="/conta" element={<Account/>}/>
         </Routes>
 
       </main>
