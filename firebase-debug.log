@@ -1,0 +1,25 @@
+[debug] [2025-06-08T20:38:08.276Z] ----------------------------------------------------------------------
+[debug] [2025-06-08T20:38:08.278Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-08T20:38:08.279Z] CLI Version:   14.4.0
+[debug] [2025-06-08T20:38:08.279Z] Platform:      win32
+[debug] [2025-06-08T20:38:08.279Z] Node Version:  v22.14.0
+[debug] [2025-06-08T20:38:08.279Z] Time:          Sun Jun 08 2025 17:38:08 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-06-08T20:38:08.279Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-08T20:38:08.283Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-08T20:38:08.283Z] > authorizing via signed-in user (marcsfic98@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\xampp\htdocs\programacao\sportshopping
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+

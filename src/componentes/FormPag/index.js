@@ -136,12 +136,21 @@ function FormPag({cartTotal,removeProductCart,addToCartTotal ,selectedProduct}) 
           </div>
         )}
 
-        {/* You might want a div for Boleto too, if it has specific content */}
+        
         {activePaymentMethod === 'boleto' && (
-          <div className='box-boleto'>
-            <p>Clique no botão abaixo para gerar seu boleto.</p>
-            <button>Gerar Boleto</button>
-            {/* Add any other boleto-specific content here */}
+          <div className='box-pix'>
+
+            <div className='boleto'></div>
+            <div className='total-price'>
+              <p>Total dos produtos<b>R$ {cartTotalFormat} </b> </p>
+              <p>Total do Frete <b>R$0,00</b> </p>
+              <p>Pagamento Total<b>R$ {cartTotalFormat}</b> </p>
+              <br/>
+              <br/>
+              <button>Copiar Código de Barras</button>
+            </div>
+            
+            
           </div>
         )}
 

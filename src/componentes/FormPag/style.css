@@ -20,7 +20,7 @@
 }
 
 .box-form input {
-    width: 15rem;
+    width: 14rem;
     height: 1.5rem;
     padding-left: 10px;
     margin-left: 20px;
@@ -77,6 +77,15 @@
 
 .qrcode {
     background-image: url('../../../public/QRCode.png');
+    height: 20rem;
+    width: 20rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 40px 20px 20px 20px;
+}
+
+.boleto{
+    background-image: url('../../../public/images/pngwing.com.png');
     height: 20rem;
     width: 20rem;
     background-size: 100% 100%;

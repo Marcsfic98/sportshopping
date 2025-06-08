@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css'
-import { faEnvelope, faLocationPin, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLocationPin} from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function Contacts () {

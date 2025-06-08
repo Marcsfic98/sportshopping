@@ -1,8 +1,8 @@
-import { faBars, faSearch, faShoppingBag, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import './style.css';
-import { useState , useEffect} from "react";
+import { useState } from "react";
 function Navbar({ SetshowSidebarCart , selectedProduct , setFind}) {
 
    
