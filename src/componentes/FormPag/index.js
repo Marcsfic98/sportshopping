@@ -16,11 +16,11 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
   const [estado, setEstado] = useState('');
   const [cidade, setCidade] = useState('');
 
-  // Estados para validação de CPF
+ 
   const [cpf, setCpf] = useState('');
   const [cpfError, setCpfError] = useState('');
 
-  // Estados para validação de cartão
+ 
   const [nameCardError, setNameCardError] = useState('');
   const [numCardError, setNumCardError] = useState('');
   const [validadCardError, setValidadeCardError] = useState('');
@@ -31,7 +31,7 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
   const nameCardTransform = nameCard.toUpperCase();
   const cartTotalFormat = cartTotal.toFixed(2).replace(".", ",");
 
-  // --- Funções de Validação ---
+
 
   const validateCpf = (cpf) => {
     cpf = cpf.replace(/[^\d]+/g, '');
@@ -141,14 +141,15 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
 
       <div className='box-form justify'>
         <span>CPF</span>
+        {cpfError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{cpfError}</p>}
         <input
           placeholder='ex:999.888.777-66'
           type='text'
           value={cpf}
           onChange={(e) => {
-            let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é dígito
+            let value = e.target.value.replace(/\D/g, ''); 
             
-            // Adiciona pontos e hífen
+            
             if (value.length > 9) {
               value = value.replace(/(\d{3})(\d)/, '$1.$2');
               value = value.replace(/(\d{3})(\d)/, '$1.$2');
@@ -162,7 +163,7 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
             
             setCpf(value);
 
-            // Valida apenas se o CPF tiver 11 dígitos, ou limpa o erro
+
             if (value.replace(/[^\d]+/g, '').length === 11) {
               if (!validateCpf(value)) {
                 setCpfError('CPF inválido.');
@@ -173,14 +174,14 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
               setCpfError('');
             }
           }}
-          onBlur={() => { // Valida ao sair do campo
+          onBlur={() => { 
             if (cpf.replace(/[^\d]+/g, '').length > 0 && !validateCpf(cpf)) {
               setCpfError('CPF inválido.');
             }
           }}
-          maxLength={14} // Máximo de 11 dígitos + 2 pontos + 1 hífen = 14 caracteres
+          maxLength={14} 
         ></input>
-        {cpfError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{cpfError}</p>}
+        
       </div>
 
       <div className='box-form justify'>
@@ -248,7 +249,7 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
                 </div>
               </div>
 
-              <input
+              <input 
                 onChange={(e) => {
                   setNameCard(e.target.value);
                   if (e.target.value.trim().length < 3 && e.target.value.trim().length > 0) {
@@ -266,14 +267,14 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
                 type='text'
                 value={nameCard}
               ></input>
-              {nameCardError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{nameCardError}</p>}
+              {nameCardError && <p style={{ color: 'red', fontSize: '0.8rem' , position:"absolute",bottom:"-45px", left:"-45px"}}>{nameCardError}</p>}
 
-              <input
+              <input 
                 onChange={(e) => {
-                  let value = e.target.value.replace(/\s/g, ''); // Remove espaços para validação
-                  const formattedValue = value.replace(/(\d{4})(?=\d)/g, '$1 '); // Adiciona espaço a cada 4 dígitos
+                  let value = e.target.value.replace(/\s/g, ''); 
+                  const formattedValue = value.replace(/(\d{4})(?=\d)/g, '$1 '); 
                   
-                  setNumCard(formattedValue); // Atualiza o estado com o valor formatado
+                  setNumCard(formattedValue);
 
                   if (value.length >= 13 && !validateCardNumber(value)) {
                     setNumCardError('Número de cartão inválido.');
@@ -289,14 +290,14 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
                 placeholder='Numero do Cartão'
                 type='text'
                 value={numCard}
-                maxLength={19} // Máximo de 16 dígitos + 3 espaços = 19
+                maxLength={19} 
               ></input>
-              {numCardError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{numCardError}</p>}
+              {numCardError && <p style={{ color: 'red', fontSize: '0.8rem' , position:"absolute",bottom:"-95px", left:"-80px"}}>{numCardError}</p>}
 
               <input
                 onChange={(e) => {
                   const value = e.target.value;
-                  // Adiciona barra automaticamente
+                  
                   if (value.length === 2 && validadCard.length < 2) {
                     setValidadeCard(value + '/');
                   } else {
@@ -315,10 +316,10 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
                 }}
                 placeholder='Vencimento (MM/AA)'
                 type='text'
-                maxLength={5} // MM/AA
+                maxLength={5} 
                 value={validadCard}
               ></input>
-              {validadCardError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{validadCardError}</p>}
+              {validadCardError && <p style={{ color: 'red', fontSize: '0.8rem', position:"absolute",bottom:"-145px", left:"-140px" }}>{validadCardError}</p>}
 
               <input
                 onChange={(e) => {
@@ -331,7 +332,7 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
                 }}
                 placeholder='cvc'
                 type='text'
-                maxLength={4} // CVC pode ter 3 ou 4 dígitos
+                maxLength={4}
                 onFocus={() => setIsCvcFocused(true)}
                 onBlur={() => {
                   setIsCvcFocused(false);
@@ -341,7 +342,7 @@ function FormPag({ cartTotal, removeProductCart, addToCartTotal, selectedProduct
                 }}
                 value={cvcCard}
               ></input>
-              {cvcCardError && <p style={{ color: 'red', fontSize: '0.8rem' }}>{cvcCardError}</p>}
+              {cvcCardError && <p style={{ color: 'red', fontSize: '0.8rem' , position:"absolute",bottom:"-200px", left:"-45px"}}>{cvcCardError}</p>}
             </div>
             <div className='total-price'>
               <p>Total dos produtos<b>R$ {cartTotalFormat}</b> </p>
